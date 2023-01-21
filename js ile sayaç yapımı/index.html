@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="box">
+    <h2 id="sayac">0</h2>
+
+    <button id="art">Arttır</button>
+    <button id="azalt">Azalt</button>
+    
+    
+    </div>
+    <script>
+        let buttonArt = document.getElementById("art");
+        let buttonAzalt = document.getElementById("azalt"); //değişken oluşturup, get element ile çağırdık
+        let counterShow= document.getElementById("sayac");
+        let sayac=0; //h2deki 0 degerini temsil
+        buttonArt.addEventListener("click",()=>{//click işlemi yapılıcağında çalışıcağını söyledik
+            sayac +=1;
+            counterShow.innerHTML= sayac;
+        })
+        buttonAzalt.addEventListener("click",()=>{//click işlemi yapılıcağında çalışıcağını söyledik
+            sayac -=1;
+            counterShow.innerHTML= sayac;
+        })
+    </script>
+</body>
+</html>
