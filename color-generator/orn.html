@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="numColors">
+<button onclick="generateColors()">Üret</button>
+<div id="colorContainer"></div>
+<style>
+    div {
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  float: left;
+  margin-top: 50px;
+}
+</style>
+<script>
+    function generateColors() {
+    let numColors = document.getElementById("numColors").value;
+    let colorContainer = document.getElementById("colorContainer");
+    for (let i = 0; i < numColors; i++) {
+        let r = Math.floor(Math.random() * 256);
+        let g = Math.floor(Math.random() * 256);
+        let b = Math.floor(Math.random() * 256);
+        let color = `rgb(${r}, ${g}, ${b})`;
+        let div = document.createElement("div");
+        div.style.backgroundColor = color;
+        colorContainer.appendChild(div);
+        console.log(color);
+    }
+}
+</script>
+</body>
+</html>
