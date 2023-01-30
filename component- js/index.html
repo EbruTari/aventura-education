@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="menu-wrapper">
+        <div class="navbar" id="navbar">
+            <li><a class="btn active" href="#">home</a></li>
+            <li><a class="btn" href="#">toppics</a></li>
+            <li><a class="btn" href="#">rewards</a></li>
+            <li><a class="btn" href="#">earn</a></li>
+            <li><a class="btn" href="#">recommend</a></li>
+        </div>
+        
+    </div>
+    <style>
+        body{
+            text-align: center;
+            place-items: center;
+            background-color: #fff;
+        }
+        .menu-wrapper{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            height: 80px;
+            width: 50vw;
+            line-height: 80px;
+            background-color: #24662d;
+            box-shadow: 0px 10px 20px rgba(0,0,0,0.25);
+        }
+        
+        .menu-wrapper .navbar{
+            display: flex;
+        }
+        .menu-wrapper .navbar li{
+            list-style-type: none;
+            flex: 1;
+            font-size: 25px;
+            cursor: pointer;
+        }
+        .menu-wrapper .navbar li a{
+            color:white ;
+            transition: 0.5 ease;
+            display: inline-block;
+            text-decoration: none;
+
+        }
+        .menu-wrapper .navbar li .active{
+            color: white;
+            border-bottom: 5px solid black;
+            width: 100%;
+            border-radius: 1px;
+            transition: 0.5 ease;
+
+        }
+        .menu-wrapper .navbar li:hover{
+            color: #24662d;
+        }
+    </style>
+    <script>
+        var btnContainer= document.getElementById("navbar");
+        var btns =btnContainer.getElementsByClassName("btn");
+        for(var i =0; i<btns.length;i++){
+            btns[i].addEventListener('click',function(){
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active");
+                this.className += " active";
+            })
+        }
+    </script>
+</body>
+</html>
