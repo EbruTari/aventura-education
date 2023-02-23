@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"><!--htmlin karakter kodlamasını belirlemek için -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"><!--web sayfa uyumluluğunu sağlamak için-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- initial-scale özelliği sayfanın varsayılan yakınlaştırma seviyesini belirleme için-->
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    
+</head>
+<body>
+  <div id="kapsa">
+    <!-- TASK 1 BAŞLANGIÇ -->
+    <div  id="tel_no_div" style="margin-left: 30%; position: absolute;">
+      <button id="tel_no">telefon numarası +33 ile başlayan</button> 
+    </div>
+    <div id="website_div">
+      <button id="website_button">Websitesi .com ile biten şirketler</button> 
+        
+    </div>
+    <div id="ing_usa" style="margin-left: 30%; position: absolute;">
+      <button id="btn_ia">ingiltere ve amerikada faaliyet göstermeyenler</button>
+    </div>
+    <div id="resim_div">
+      <button id="resim_button">şirket resmi ve ülke bayrağını gösterme</button>
+    </div>
+    <!-- TASK 1 BİTİŞ -->
+
+    <!-- TASK 2 BAŞLANGIÇ  -->
+   
+    <div id="tum" style="margin-left: 30%; position: absolute;">
+      <button id="tum-btn">tüm liste</button>
+    </div>
+    <div id="sort_prod">
+      <button id="btn-sort"> ürünleri a-z sıralama</button>
+    </div>
+      <div id="azalan"style="margin-left: 60%;top:40px; position: absolute;">
+        <button id="azalan-btn">Azalan fiyat</button>
+      </div>
+      <div id="artan"style="margin-left: 60%;top:140px; position: absolute;">
+        <button id="artan-btn">artan fiyat</button>
+      </div>
+
+      <!-- <div class="siralama">
+        <button class="click">Sıralama İşlemleri</button>
+        <div class="list">
+          <button id="links-azalan">Azalan Fiyata Göre</button>
+          <button class="links-artan">Artan Fiyata Göre</button>
+          
+        </div>
+      </div> -->
+      
+
+  </div>
+  <!-- kapsa son -->
+ 
+  <script src="products.js"></script>
+    <script src="companies.js"></script>
+    <script src="countries.js"></script>
+    <script src="script.js"></script>
+
+
+  <!-- <script>
+    let click=document.querySelector('.click');
+    let list= document.querySelector('.list');
+    click.addEventListener("click",()=>{
+      list.classList.toggle('newList');//gizle-göster işlemi için toggle
+    });
+
+  </script> -->
+</body>
+</html>
