@@ -1,0 +1,39 @@
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.card{
+    width: 300px;
+    height: 400px;
+    margin: 30px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);;
+}
+.card img{
+    width: 100%;
+}
+.product-name{
+    font-size: 15px;
+    margin-left: 38px;
+}
+.yazi{
+    display: flex;
+    justify-content: space-evenly;
+}
+.current-price{
+    font-size:larger;
+    margin: 15px;
+    color: rgb(199, 199, 19);
+}
+.old-price{
+    font-size:medium;
+    margin: 15px;
+    text-decoration:line-through;
+    color: rgb(199, 199, 19);
+}
+
+.fa-heart{
+    color: rgb(199, 199, 19);
+    padding-right: 10px;
+
+}
